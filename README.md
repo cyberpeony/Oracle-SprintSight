@@ -14,3 +14,10 @@ Oracle's software development team aims to enhance productivity and visibility o
   - **Infrastructure:** Oracle Cloud Infrastructure, Oracle Autonomous Database, Kubernetes, Docker, REST API, Telegram.  
   - **Development:** Java, Microservices, Spring Boot, API Gateway, OCI Container Registry, React JS.
   - **Operations:** CI/CD automation, infrastructure provisioning via Infrastructure as Code.   
+
+## **Team 13, members:**  
+- Diego Iván Morales Gallardo (A01643382)
+- José María Soto Valenzuela (A01254831)
+- Cesar Alan Silva Ramos (A01252916)
+- Fernanda Díaz Gutiérrez (A01639572)
+- Miguel Angel Barrientos Ballesteros (A01637150)
