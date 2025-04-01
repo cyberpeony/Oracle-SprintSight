@@ -4,6 +4,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# ojdbc8
+/libs/
+
+
 ### STS ###
 .apt_generated
 .classpath

@@ -31,38 +31,95 @@
 		<spring-cloud.version>2024.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
+		<!-- JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- Spring Actuator -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+
+		<!-- Transacciones -->
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>javax.transaction-api</artifactId>
+			<version>1.3</version>
+		</dependency>
+
+		<!-- Spring Core -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!-- Oracle JDBC -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.8.0.0</version>
+		</dependency>
+		<!-- JPA Annotations (jakarta.persistence.*) -->
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<!-- Spring Data REST -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
+
+		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- Spring Cloud Load Balancer -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
 		</dependency>
 
+		<!-- Devtools -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Oracle JDBC adicional (opcional si ya usas ojdbc8) -->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc11</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Testing -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- Telegram Bot API -->
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots</artifactId>
+			<version>6.8.0</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
@@ -85,5 +142,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+	<repository>
+		<id>oracle</id>
+		<name>Oracle JDBC Repository</name>
+		<url>https://maven.oracle.com</url>
+	</repository>
+	</repositories>
 
 </project>
